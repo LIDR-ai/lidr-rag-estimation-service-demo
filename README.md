@@ -1,6 +1,30 @@
-# RAG Estimation Service
+# Sistema RAG de estimación de proyectos
 
-AI-powered software estimation service using Retrieval-Augmented Generation. Ingests historical software quotes, vectorizes them with pgvector, and generates data-driven estimations via LLM.
+Plataforma web para estimar presupuestos de proyectos tecnológicos usando **RAG** (Retrieval-Augmented Generation). Permite ingestar presupuestos históricos, indexarlos con embeddings vectoriales, y generar estimaciones de horas y costes para nuevos proyectos basándose en datos reales.
+
+El sistema consta de dos repositorios independientes:
+
+- **[rag-estimation-platform](https://github.com/LIDR-ai/lidr-rag-estimation-platform-demo)** — Aplicación web Rails para la gestión de estimaciones, exportación PDF/JSON y UI.
+- **rag-estimation-service** (este repo) — Servicio RAG con FastAPI, pgvector y OpenAI para indexación y estimación con IA.
+
+## 🎥 Vídeo del tutorial
+
+[![Ver el tutorial](https://img.youtube.com/vi/E-Hm9IRViYo/maxresdefault.jpg)](https://youtu.be/E-Hm9IRViYo)
+
+▶️ [Ver el tutorial en vídeo](https://youtu.be/E-Hm9IRViYo)
+
+## Descripción
+
+Esta demo avanzada añade varias funcionalidades con IA a un software real de gestión de proyectos de software: síntesis de información a partir de reuniones con clientes, y estimación de tareas, esfuerzo y coste a partir de esa reunión y el histórico de proyectos de la empresa.
+
+Qué aprenderás:
+
+- ✅ Cómo diseñar un sistema RAG real que transforme conversaciones con clientes en estimaciones estructuradas de proyectos software.
+- ✅ Qué arquitectura, datos y guardrails hacen falta para pasar de una demo con LLMs a un producto fiable en producción.
+- ✅ Cómo integrar IA generativa en proyectos de software reales: bases de datos vectoriales, integración de modelos vía API, indexación de información, chunking y vectorización, búsqueda semántica y más.
+
+Verás cómo conviven en el código los servicios de IA, sin necesidad de flujos complejos ni de piezas externas al proyecto.
+
 
 ## Prerequisites
 
@@ -388,3 +412,16 @@ For complete request/response schemas and to try out the API interactively:
 
 - **Swagger UI:** http://localhost:8000/docs
 - **ReDoc:** http://localhost:8000/redoc
+
+---
+
+## Copyright
+
+Copyright (c) 2026 LIDR.co. Licensed under the MIT License.
+
+**Español:**
+El contenido de este repositorio es parte del programa AI Engineering de LIDR.co. Si quieres aprender AI Engineering con los pros, y obtener más plantillas y recursos como estos, puedes encontrar toda la información en la página oficial: https://lidr.co/ai-engineering
+
+**English:**
+The content of this repository is part of the AI Engineering program by LIDR.co. If you want to learn AI Engineering with the pros and get more templates and resources like these, you can find all the information on the official website: https://lidr.co/ai-engineering
+
